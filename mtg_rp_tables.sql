@@ -5,7 +5,7 @@
 CREATE TABLE IF NOT EXISTS `account_directory` (
   `sqlid` int(11) NOT NULL,
   `name` varchar(24) NOT NULL
-) ENGIN
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Table structure for table `account_whitelist`
