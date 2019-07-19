@@ -1267,7 +1267,7 @@ stock CreatePlayerToys(playerid)
 	new query[128];
 	for(new i; i < MAX_TOYS; i++)
 	{
-		mysql_format(MYSQL_MAIN, query, sizeof(query), "INSERT INTO player_toys (PlayerSQL) VALUES (%d)", Player[playerid][pSQL_ID]);
+		mysql_format(MYSQL_MAIN, query, sizeof(query), "INSERT INTO player_toys (PlayerSQLID) VALUES (%d)", Player[playerid][pSQL_ID]);
 		mysql_query(MYSQL_MAIN, query, false);
 	}
 	return 1;
